@@ -1,0 +1,657 @@
+/**
+ *
+ * Project Name: Leaven;
+ * Author: Abdulaha Islam;
+ * Version: 1.0.1;
+ * Company: Abnipes Network;
+ * Descriptions: Leaven is an html5 responsive e-commerce template;
+ *
+ *
+ *
+ **************
+ * RESPONSIVE CSS TABLE OF CONTENTS
+ **************
+ *
+ * 01. X-Large devices
+ * 02. Large devices
+ * 03. Medium devices
+ * 04. Small devices
+ * 05. X-Small devices
+ * 
+ */
+
+/* 01. X-Large devices (large desktops, less than 1400px) */
+@media screen and (max-width: 1399.98px) {}
+
+/* 02. Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+
+    /* Header top area */
+    section.leaven__header_top_area {
+        display: none;
+    }
+
+    .leaven__logo h1 {
+        font-size: 28px;
+    }
+
+    .leaven__main_menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        width: 300px;
+        background: #ddd;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .leaven__main_menu.active {
+        visibility: visible;
+        opacity: 1;
+        right: 0;
+    }
+
+    .leaven__search_box form {
+        display: block;
+        position: relative;
+    }
+
+    .leaven__search_box form input {
+        position: absolute;
+        top: 140px;
+        right: 12px;
+        border-radius: 4px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .leaven__search_input.active {
+        top: 28px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .leaven__search_box {
+        display: flex;
+        justify-content: right;
+    }
+
+    .leaven__search_icon,
+    .leaven__search_box form button {
+        background: transparent;
+        border: none;
+        color: var(--primary);
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    a.leaven__search_icon.leaven__search_icon_btn {
+        display: block;
+    }
+
+    button.leaven__search_btn {
+        display: none;
+    }
+
+    .leaven__menu_icon {
+        display: block;
+    }
+
+    .leaven__main_menu nav ul li {
+        display: block;
+        padding: 4px 0;
+    }
+
+    .leaven__main_menu nav ul {}
+
+    .leaven__main_menu nav {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leaven__main_menu nav ul li a {
+        display: inline-block;
+    }
+
+    .leaven__menu_cross_icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .leaven__menu_cross_icon span {
+        width: 100%;
+        height: 3px;
+        display: block;
+        background: #222;
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+
+    .leaven__menu_cross_icon span {
+        position: absolute;
+        width: calc(100% - 0px);
+        top: calc(12% - -5px);
+    }
+
+    .leaven__menu_cross_icon span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .leaven__menu_cross_icon span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    /* Home */
+    .leaven__promo_content {
+        padding-left: 15px;
+    }
+
+    .leaven__hero_item_content {
+        padding: 150px 3px;
+    }
+
+    .leaven__sale_content {
+        padding: 90px 0;
+    }
+
+    section.leaven__offer_area,
+    section.leaven__most_view_product_area,
+    section.leaven__featured_products,
+    section.leaven__best_seller_area,
+    section.leaven__payment_logos {
+        padding: 60px 0;
+    }
+
+    .leaven__app_link a {
+        display: block;
+    }
+
+    /* 404 */
+    .leaven__error_content_bg {
+        height: 260px;
+    }
+
+    /* comming soon */
+    section.leaven__comming_soon_area {
+        padding: 100px 0;
+    }
+
+    .leaven__comming_soon_content h2 {
+        font-size: 82px;
+        line-height: 84px;
+    }
+
+    /* contact */
+    .leaven__contact_info_social_list {
+        margin-bottom: 26px;
+    }
+
+}
+
+/* 03. Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+
+    /* Home */
+    .leaven__call_to_action_area_content {
+        padding: 60px;
+    }
+
+    .leaven__call_to_action_area_content h2 {
+        font-size: 36px;
+    }
+
+    .leaven__featured_image {
+        height: 360px;
+    }
+
+    .leaven__sale_content h2 {
+        font-size: 36px;
+    }
+
+    .leaven__sale_content {
+        padding: 50px 0;
+    }
+
+    .leaven__app_link a {
+        display: unset;
+    }
+
+    .leaven__single_carousel_item.slick-slide.slick-active.slick-center {
+        transform: scale(1.2);
+        padding: 50px 50px;
+    }
+
+    /* 404 */
+    .leaven__error_content_bg {
+        height: 200px;
+    }
+
+
+    /* comming soon */
+    section.leaven__comming_soon_area {
+        padding: 100px 0;
+    }
+
+    .leaven__comming_soon_content h2 {
+        font-size: 78px;
+        line-height: 84px;
+    }
+
+    /* comming soon */
+    div#countdown ul li {
+        font-size: 14px;
+        width: 120px;
+    }
+
+    div#countdown ul li:after {
+        width: 80px;
+        height: 80px;
+        top: -30%;
+        left: 18%;
+    }
+
+    .leaven__comming_soon_form input[type="email"] {
+        width: 40%;
+    }
+
+    /* Faq */
+    .leaven__accourdian_content {
+        padding: 0;
+        margin-bottom: 46px;
+    }
+
+    /* contact */
+    .leaven__contact_page_info {
+        margin-bottom: 45px;
+    }
+
+}
+
+/* 04. Small devices (landscape phones, less than 768px)  */
+@media screen and (max-width: 767.98px) {
+
+    /* Home */
+    .leaven__single_offer {
+        padding: 0;
+    }
+
+    .leaven__offer_content_img {
+        padding: 25px 0;
+    }
+
+    .leaven__offer_content_img img {}
+
+    .leaven__offer_content_img a img {}
+
+    .leaven__offer_content {
+        padding-bottom: 380px;
+    }
+
+    .leaven__most_view_product_area {
+        padding: 60px 0;
+    }
+
+    .leaven__sale_img {
+        height: 340px;
+    }
+
+    .leaven__sale_content {
+        padding: 64px 0;
+    }
+
+    .leaven__sale_content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    ul.slick-dots {
+        bottom: 10%;
+    }
+
+    .leaven__promo_area {
+        margin: 50px 3px;
+    }
+
+    .leaven__sale_area {
+        padding: 50px 0 0;
+        margin: 0;
+    }
+
+    .leaven__most_view_carousel button.slick-prev.pull-left {
+        left: 5%;
+    }
+
+    .leaven__most_view_carousel button.slick-next.pull-right {
+        right: 5%;
+    }
+
+    .leaven__single_carousel_thum {
+        height: 360px;
+    }
+
+    .leaven__single_carousel_item {
+        transform: scale(1);
+    }
+
+    .leaven__newsletter_content input[type="email"] {
+        width: 72%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .leaven__newsletter_content form {}
+
+    .leaven__newsletter_content button {
+        width: auto;
+        margin: 20px 0 0;
+    }
+
+    /* 404 */
+    .leaven__error_content_bg {
+        height: 140px;
+    }
+
+    /* comming soon */
+    .leaven__comming_soon_form input[type="email"] {
+        width: 66%;
+        margin-right: 0 !important;
+        margin: 0 auto;
+    }
+
+    .leaven__comming_soon_form button {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    /* cart */
+    section.leaven__cart_page_content {
+        padding: 60px 3px;
+    }
+
+    .leaven__cart_table thead {
+        display: none;
+    }
+
+    span.leaven__product_price_before,
+    span.leaven__product_quantity_before,
+    span.leaven__product_totla_price_before {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    .leaven__cart_table tbody tr {
+        position: relative;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        padding-left: 115px;
+        min-height: 136px;
+        display: block;
+    }
+
+    td.leaven__product_cross {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        z-index: 1;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none !important;
+    }
+
+    td.leaven__product_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        max-height: 115px;
+        border-bottom: none;
+        border: none !important;
+    }
+
+    .leaven__product_text {
+        padding: 0;
+    }
+
+    .leaven__cart_table .table tbody {
+        display: block;
+    }
+
+    td.leaven__product_name {
+        text-align: left !important;
+        display: block;
+    }
+
+    .leaven__cart_table tbody tr td {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px dashed rgba(129, 129, 129, 0.2);
+    }
+
+    td.leaven__product_price {
+        display: block;
+        text-align: left !important;
+    }
+
+    td.leaven__product_quantity {
+        display: block;
+    }
+
+    .leaven__quantity_block {
+        width: 85px;
+    }
+
+    button.leaven__quantity_arrow_minus,
+    button.leaven__quantity_arrow_plus {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 2px;
+        width: 22px;
+        border: 1px solid;
+    }
+
+    span.leaven__product_quantity_before {
+        line-height: 28px;
+    }
+
+    input.leaven__quantity_num {
+        font-size: 16px;
+        padding: 3px 0 0px 5px;
+        border-radius: 0;
+    }
+
+    td.leaven__product_totla_price {
+        border: none !important;
+    }
+
+    .leaven__quantity_block {
+        margin-right: 0;
+    }
+
+    /* Faq */
+
+    section.leaven__faq_page_content {
+        padding: 60px 3px;
+    }
+
+    .leaven__accourdian_content {
+        padding: 0;
+    }
+
+    /* contact */
+    section.leaven__contact_page_content {
+        padding: 60px 3px;
+    }
+
+    .leaven__contact_page_info {
+        margin-bottom: 45px;
+    }
+
+    .leaven__contact_info_social_list li a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+}
+
+/* 05. X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+
+    /* Home */
+    section.leaven__header_top_area {
+        display: none;
+    }
+
+    .leaven__top_left_content {
+        display: none;
+    }
+
+    .leaven__top_right_content {
+        padding: 0 3px;
+    }
+
+    .leaven__site_meta {
+        padding-right: 5px;
+    }
+
+    .leaven__hero_item_content {
+        padding: 140px 3px;
+    }
+
+    .leaven__hero_item_content h3 {
+        font-size: 26px;
+    }
+
+    .leaven__hero_item_content h2 {
+        font-size: 58px;
+    }
+
+    .leaven__hero_item_content a.leaven__hero_btn {
+        padding: 5px 15px;
+    }
+
+    .leaven__offer_area {
+        padding: 50px 15px !important;
+    }
+
+    .leaven__offer_content {
+        padding-bottom: 320px;
+    }
+
+    .leaven__most_view_product_area {
+        padding: 60px 0;
+    }
+
+    .leaven__single_carousel_item.slick-slide.slick-active.slick-center {
+        padding: 80px 40px;
+    }
+
+    .leaven__featured_products {
+        padding: 60px 3px;
+    }
+
+    .leaven__featured_image {
+        height: 420px !important;
+    }
+
+    .leaven__single_featured_item {
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    .leaven__call_to_action_area_content {
+        padding: 50px 25px;
+    }
+
+    .leaven__call_to_action_area_content h2 {
+        font-size: 42px;
+    }
+
+    .leaven__best_freature_bg {
+        padding-top: 420px;
+    }
+
+    .leaven__best_seller_area {
+        padding: 60px 15px !important;
+    }
+
+    .leaven__best_seller_single_product {
+        width: 50%;
+    }
+
+    .leaven__best_seller_products {
+        margin-top: 50px;
+    }
+
+    .leaven__newsletter_content h2 {
+        font-size: 36px;
+    }
+
+    .leaven__newsletter_content h4 {
+        font-size: 21px;
+    }
+
+    .leaven__payment_logos {
+        padding: 60px 0;
+    }
+
+    .leaven__footer_top_area {
+        padding: 50px 15px 20px;
+    }
+
+    .leaven__copyright_text p {
+        font-size: 16px;
+    }
+
+    .leaven__copyright_text span {
+        font-size: 14px;
+    }
+
+
+    /* 404 */
+    .leaven__error_content_bg {
+        height: 95px;
+    }
+
+    /* commint soon */
+    .leaven__comming_soon_content h2 {
+        font-size: 58px;
+        line-height: 58px;
+    }
+
+    .leaven__comming_soon_content h4 {
+        font-size: 28px;
+    }
+
+    div#countdown ul li {
+        margin-bottom: 90px;
+    }
+
+    div#countdown {
+        padding: 60px 0 0;
+    }
+
+}

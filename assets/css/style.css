@@ -1,0 +1,49 @@
+/**
+ *
+ * Project Name: ******;
+ * Author: Abdulaha Islam;
+ * Version: 1.0.1;
+ * Company: Abnipes Network;
+ * Descriptions: ****** is an html5 responsive e-commerce template;
+ *
+ *
+ *
+ **************
+ * CSS TABLE OF CONTENTS
+ **************
+ *
+ * 01. Default css
+ * 02. Variables
+ *     
+ *     
+ *
+ * 
+ */
+
+/* 01. Default css */
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 02. Variables */
+:root {
+    --primary: #f15724;
+    --secondary: #202b31;
+    --gray: #585858;
+    --graybg: #f7f7f6;
+    --white: #ffffff;
+    --bebas: "Bebas Neue";
+}
+
